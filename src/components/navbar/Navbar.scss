@@ -1,0 +1,127 @@
+#navbar {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 32px rgba(0, 16, 61, 0.16);
+  height: 80px;
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-middle {
+      .nav-middle__links {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+        ul {
+          padding-left: 0 !important;
+        }
+        li {
+          padding: 0 8px !important;
+          a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2c2d2e !important;
+          }
+          a:hover {
+            color: #ef7c00 !important;
+            transition: 0.5s;
+          }
+        }
+        .line {
+          width: 28px;
+          height: 0px;
+          border: 1px solid rgba(0, 16, 61, 0.12);
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.hamburger {
+  display: none;
+}
+
+#navbar-responsive {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 1036px) {
+  .navbar-container {
+    .nav-middle {
+      display: none;
+    }
+    .nav-right {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    #close-navbar {
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    #navbar-responsive ul {
+      display: block;
+      max-width: 100px;
+      margin-top: 39px;
+      width: 100%;
+      padding: 10px 19px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 24px;
+      color: #173a56;
+      border: 1px solid #bcd0e5;
+      background: #ffffff;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+    #navbar-responsive {
+      position: absolute;
+      background: #232536;
+      display: block;
+      top: 0;
+      z-index: 2;
+      left: -100%;
+      width: 100%;
+      transition: 1s;
+    }
+    #navbar-responsive ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+      height: 100vh;
+      list-style-type: none;
+    }
+  }
+}

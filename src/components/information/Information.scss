@@ -1,0 +1,179 @@
+#information {
+  margin-bottom: 80px !important;
+  .information {
+    background-image: url(../../assets/images/information.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 376px;
+    .information-content {
+      span {
+        display: inline-block;
+        padding: 12px 0 8px 10px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        color: #2c2d2e;
+        .information__span {
+          color: #ef7c00;
+        }
+      }
+      p {
+        padding-left: 10px;
+        padding-bottom: 9px;
+        max-width: 400px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2c2d2e;
+      }
+      .information-forms {
+        position: relative;
+        display: flex;
+        gap: 12px;
+        padding-bottom: 12px;
+        padding-left: 10px;
+        .empty-item {
+          width: 40px;
+          height: 40px;
+          outline: none;
+          background: #ffffff;
+          border: 1px solid rgba(0, 16, 61, 0.12);
+          border-radius: 4px 0px 0px 4px;
+        }
+        .information__img1 {
+          position: absolute;
+          top: 13px;
+          left: 23px;
+        }
+        .information__img2 {
+          position: absolute;
+          top: 13px;
+          left: 253px;
+        }
+        .information__input {
+          width: 178px;
+          height: 40px;
+          padding-left: 12px;
+          background: #ffffff;
+          border: 1px solid rgba(0, 16, 61, 0.12);
+          border-radius: 0px 4px 4px 0px;
+          outline: none;
+        }
+      }
+      .information__description {
+        padding-left: 10px;
+        padding-bottom: 12px;
+        textarea {
+          width: 446px;
+          height: 80px;
+          padding-left: 12px;
+          background: #ffffff;
+          border: 1px solid rgba(0, 16, 61, 0.12);
+          border-radius: 4px;
+        }
+      }
+      .information__btn {
+        padding-left: 10px;
+        button {
+          width: 225px;
+          height: 40px;
+          background: #ef7c00;
+          border-radius: 4px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 20px;
+          color: #ffffff;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #information {
+    .information {
+      .information-content {
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .information {
+    .information-content {
+      .information-forms {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .information__img2 {
+          position: absolute;
+          left: 23px !important;
+          top: 64px !important;
+        }
+      }
+      .information__description {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .information {
+    .information-content {
+      span {
+        font-size: 18px !important;
+      }
+      p {
+        max-width: 300px !important;
+        font-size: 12px !important;
+        line-height: 130% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .information {
+    .information-content {
+      span {
+        padding-left: 0 !important;
+        font-size: 14px !important;
+      }
+      p {
+        max-width: 200px !important;
+        font-size: 10px !important;
+        padding-left: 0 !important;
+      }
+      .information-forms {
+        padding-left: 0 !important;
+        .information__img1 {
+          position: absolute;
+          left: 13px !important;
+        }
+        .information__img2 {
+          position: absolute;
+          left: 13px !important;
+        }
+        .information__input {
+          padding-left: 5px !important;
+          width: 140px !important;
+        }
+      }
+      .information__btn {
+        padding-left: 0 !important;
+        button {
+          width: 180px !important;
+        }
+      }
+    }
+  }
+}
