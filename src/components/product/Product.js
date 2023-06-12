@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "../product/Product.scss";
 import Pro1 from "../../assets/images/pro1.png";
 import Pro2 from "../../assets/images/pro2.png";
@@ -16,18 +17,39 @@ export default class Product extends Component {
               Наша <span className="product-span">продукция</span>
             </span>
           </div>
-          <div className="products__btns">
-            <button>Ламинатные тубы</button>
-            <button>Экструзионные тубы</button>
-            <button>Другая упаковка</button>
-          </div>
-          <div className="product">
-            <img src={Pro1} alt="" />
-            <img src={Pro2} alt="" />
-            <img src={Pro3} alt="" />
-            <img src={Pro4} alt="" />
-            <img src={Pro5} alt="" />
-          </div>
+          <Tabs>
+            <div className="products__btns">
+              <TabList>
+                <Tab>
+                  <button>Ламинатные тубы</button>
+                </Tab>
+                <Tab>
+                  <button>Экструзионные тубы</button>
+                </Tab>
+                <Tab>
+                  <button>Другая упаковка</button>
+                </Tab>
+              </TabList>
+            </div>
+            <div className="product">
+              <TabPanel>
+                <img src={Pro1} alt="" />
+                <img src={Pro2} alt="" />
+                <img src={Pro3} alt="" />
+                <img src={Pro4} alt="" />
+                <img src={Pro5} alt="" />
+              </TabPanel>
+              <TabPanel>
+                <img src={Pro3} alt="" />
+                <img src={Pro4} alt="" />
+                <img src={Pro5} alt="" />
+              </TabPanel>
+              <TabPanel>
+                <img src={Pro1} alt="" />
+                <img src={Pro2} alt="" />
+              </TabPanel>
+            </div>
+          </Tabs>
           <div className="products-btn">
             <button>Перейти в каталог</button>
           </div>

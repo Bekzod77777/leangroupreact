@@ -10,7 +10,7 @@ export default class Footer extends Component {
   render() {
     return (
       <footer>
-        <ScrollToTop smooth top="400" width="20" height="20" color="white"/>;
+        <ScrollToTop smooth top="600" width="20" height="20" color="white"/>;
         <div className="container footer">
           <div className="footer-top">
             <div className="footer-top__img">
